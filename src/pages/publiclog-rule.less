@@ -1,0 +1,53 @@
+.public-rule-wrapper {
+  .ant-drawer-body {
+    padding: 24px 50px;
+    .w240 {
+      width: 240px;
+    }
+  }
+  .config-title {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #333333;
+    line-height: 22px;
+    font-weight: 500;
+    position: relative;
+    &::before {
+      content: ' ';
+      width: 3px;
+      height: 16px;
+      position: absolute;
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #f27e49;
+    }
+  }
+
+  .rule-row {
+    font-family: PingFangSC-Regular;
+    color: #666666;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    // height: 32px;
+    min-height: 0px;
+    margin: 24px 0;
+    .label {
+      text-align: right;
+    }
+    .desc {
+      margin-left: 8px;
+    }
+  }
+  .rule-key {
+    .rule-row;
+  }
+  .rule-schema {
+    .rule-row;
+  }
+  .rule-field-title {
+    .rule-row;
+    margin-bottom: 16px;
+  }
+}
